@@ -31,7 +31,7 @@
 		<p class="footer-img pull-left">
 		  <img src="img/URLogo.png" height="40px"/>
 		</p>
-		<p class="pull-right footer-text"><span class="footer-link">http://thewhitelab.org</span>| Rainier Barrett </p>
+		<p class="pull-right footer-text"> Rainier Barrett and Eric Holmgren </p>
 	      </div>
 
 	      <section class="center" data-background="#000f0">
@@ -68,45 +68,45 @@
 	      </section>
 	      <section>
 		<section class="center">
-		  <h3 class="red"> This Time: Metadynamics and EDM</h3>
+		  <h3 class="red"> Pore Size Analysis</h3>
+		  <h4> SEM Tomography and Image Processing</h4>
 		</section>
-		<section class="center" data-background-color="#FFF" data-background-video="mov/better_langevin_meta.mp4">
-		  <h4> Metadynamics </h4>
-		  <div class="frag-container">
-		    <p>Metadynamics: "filling up" energy wells</p>
-		    <p>$U'(s,t) = U(s) + V(s,t)$, where $V(s,t)$ is the bias.</p>
-		    <p>$V(s,t+\Delta t) = V(s,t) + h\exp{\left(\frac{(s-s(t))^2}{2\sigma ^2}\right)}$, $V(s,0) = 0$.<p>
-		    <p>Here, $h$ and $\sigma$ are fixed parameters.</p>
-		  </div>
+
+		<section class="center" data-background-color="#FFF">
+		  <h4> SEM: Working Principles</h4>
+		  <ul>
+		    <li>Fire a focused beam of electrons at surface, observe what comes back. </li>
+		    <li>Different observations for different modes: backscattered electrons, secondary electrons, and light. </li>
+		    <li>Each mode has a different interaction volume, which determines resolution. </li>
+		    
+		  </ul>
+		    <img src="img/interaction_volume.png" height="330px" style="position:relative; top:-50px; right:-50px" >
 		</section>
-		<section class="center" data-background="mov/" data-background-color="#FFF">
-		  <h4> EDM</h4>
-		  <p>An expansion on Metadynamics, using <em>tempering</em> to converge to a target surface.</p>
-		  <p>$V(s,t+\Delta t) = V(s,t) + h\exp{\left(\frac{(s-s(t))^2}{2\sigma ^2}\right)}$.</p>
-		  <p>But now, $h$ changes based on the target surface: $h = e^{-\bar{V}/k_B \Delta T}e^{F_t(s)/k_B T}$, where:</p>
-		  <p>$\bar{V}$ is the average bias, $\Delta T$ is a parameter, and $F_t(s)$ is the target energy profile.</p>
-		</section>
-		<section data-background-color="#FFF">
-		  <h3>Results</h3>
-		  <div class="frag-container">
-		    <div class="fragment fade-out multi-frag" data-fragment-index="1">
-		      <div>
-			<h4> EDM </h4>
-			<video autoplay controls  width='450px' height='430px'>
-			  <source src="mov/test.mp4">
-			</video>
-			<img src="img/nice_edm_eps_0.01.svg" width='450px' height='400px'>
-		      </div>
-		    </div>
-		    <div class="fragment fade-in multi-frag" data-fragment-index="1">
-		      <div>
-			<h4 class="red">Metadynamics:</h4>
-			<img src="img/metadynamics.svg" width="700px">
-		      </div>
-		    </div>
-		  </div>
+		
+		<section class="center" data-background-color="#FFF">
+		  <h4> Why SEM? </h4>
+		  <ul>
+		    <li>SEM can take a raster scan of large area of sample.  </li>
+		    <li>Image or series of images can be analyzed quickly with image processing software.  </li>
+		    <li>Through the use of secondary electron mode, we can specifically image the surface, making image processing even easier.  </li>
+		    
+		  </ul>
 
 		</section>
+		
+		<section class="center" data-background-color="#FFF">
+		  <h4> Procedure</h4>
+		  <ol>
+		    <li> Scan large area of surface with secondary electron mode.  </li>
+		    <li> Perform image processing on resultant images to get a distribution of pore sizes. </li>
+		    <li> Analyze pore size statistics, specifically mean diameter. </li>
+		    
+		  </ol>
+		  <aside class="notes"> By scanning a large area of the surface, with the help of image processing we can quickly measure many pore diameters. From the resulting data we can easily obtain the mean pore diameter, and any other population statistics. A major advantage of this approach is the speed and repeatability of these techniques, once implemented as a program.
+		  </aside>
+		</section>
+
+		<!-- 
 		<section data-background="#FFF" class="center">
 		  <h4> Extreme Case</h4>
 		  <img src="img/best_edm.svg" height='500px'>
@@ -115,7 +115,7 @@
 		  <h4> Getting Ready for EDM</h4>
 		  <p>Wrote a pseudo-parallelized 2D gaussian adding function in Python.</p>
 		  <img src="img/annotated_grid.svg">
-		</section>
+		</section>-->
 	      </section>
 	      <section>
 		<section class="center">
