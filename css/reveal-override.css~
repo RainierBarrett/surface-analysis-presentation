@@ -1,0 +1,85 @@
+
+.fill-500 {
+    height:500px;
+}
+
+.fill-200 {
+    height:200px;
+}
+
+
+.reveal .red {
+  color: #EE2222;
+}
+
+
+.reveal small {
+    vertical-align: middle;
+}
+
+.reveal .bright{
+    color: #DDD;
+}
+
+.reveal .attn {
+    color: #009DCD;
+}
+
+.reveal .action-call {
+    font-size: 0.5em;
+    border-bottom: 0px;
+
+}
+
+.reveal .action-call-h {
+    font-size: 1.5em;
+//    color: #009DCD;
+}
+
+.reveal .naked-table table td, .reveal .naked-table th {
+    border-bottom: 0px;
+}
+
+
+.footer-img {
+    height: 49px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   font-size: 0.5em;
+   height: 40px;
+
+}
+
+
+.slides .footnotes{
+
+  position:relative;
+  left: 10px;
+  right: 10px;
+  font-size: 0.5em;
+}
+
+
+
+.slides .footer-text {
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.5em;
+    height: 40px;   
+}
+
+.slides .footer-link {
+    color: #009DCD;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slides .footer{
+  position:fixed;
+  left: 10px;
+  bottom:-40px;
+  right: 10px;
+  
+}
